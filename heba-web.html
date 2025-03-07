@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+
+<body>
+  <h1>Heba's First Form</h1>
+
+  <form method="GET">
+    <div>
+      <label for="text">Text</label>
+      <input id="text" name="text" type="text" minlength="3" maxlength="20" value="write a text in here !" required>
+    </div>
+    <div>
+      <label for="number">Number</label>
+      <input id="number" name="number" type="number" min="100" max="400" value="200" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" minlength="8" maxlength="16" required>
+    </div>
+    <div>
+      <label for="date">Date</label>
+      <input id="date" name="date" type="date" value="2024-09-07" required>
+    </div>
+    <div>
+      <label for="checkbox">Checkbox</label>
+      - [ ]
+    </div>
+    <div>
+      <label for="range">Range</label>
+      <input id="range" name="range" type="range" min="0" max="100" value="30">
+    </div>
+    <div>
+      <fieldset>
+        <legend>Fieldset</legend>
+        
+        <input id="monday" name="day" type="radio">
+        <label for="monday">Monday</label>
+        <br>
+        <input id="tuesday" name="day" type="radio">
+        <label for="tuesday">Tuesday</label>
+        <br>
+        <input id="wednesday" name="day" type="radio">
+        <label for="wednesday">Wednesday</label>
+        <br>
+        <input id="thursday" name="day" type="radio">
+        <label for="thursday">Thursday</label>
+        <br>
+        <input id="friday" name="day" type="radio">
+        <label for="friday">Friday</label>
+
+      </fieldset>
+    </div>
+    <div>
+      <label for="select">Select</label>
+      <select id="select" name="select" required>
+        <option value="">Please select one:</option>
+        <option value="pizza">Pizza</option>
+        <option value="sushi">Sushi</option>
+        <option value="steak">Steak</option>
+        <option value="salad">Salad</option>
+        <option value="coffee">Coffee</option>
+      </select>
+    </div>
+    <div>
+      <label for="textarea">Textarea</label>
+      <textarea id="textarea" name="textarea" rows="5" cols="40" placeholder="Write some text..." required></textarea>
+    </div>
+    <input type="submit">
+  </form>
+
+</body>
+
+</html>
